@@ -1,0 +1,21 @@
+{
+  "name": "mysse",
+  "description": "Event-Source-driven middleware for event/message pushing from server to browser",
+  "version": "1.0.0",
+  "author": {
+    "name": "Seva Maltsev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TwoAbove/node-server-sent-events"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "eventsource",
+    "sse",
+    "server-sent",
+    "events"
+  ]
+}
