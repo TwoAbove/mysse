@@ -11,4 +11,5 @@ Usage
 ```javascript
 app.get('/events', sse, function(req, res) {
   res.sse('data: im from the server');
+}
 ```
