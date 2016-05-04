@@ -21,7 +21,7 @@ module.exports = function sse(req, res, next) {
   res.write(':' + Array(2049).join(' ') + '\n');
   res.sse('retry: 2000\n\n');
 
-  let keepAlive = setInterval(function() {
+  var keepAlive = setInterval(function() {
     res.sse(':keep-alive\n\n');
   }, 19999);
 
