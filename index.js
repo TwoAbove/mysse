@@ -11,9 +11,9 @@ module.exports = function sse(req, res, next) {
   res.sse = function sse(data) {
 
     res.write('id: ' + Date.now() + '\n');
-    res.write('data: ' + JSON.stringify(data) + '\n\n');
+    res.write('data: ' + `${data}` + '\n\n');
 
-    if (data.match(/\n\n$/) && res.flushHeaders) {
+    if (  data.match(/\n\n$/) && res.flushHeaders) {
       res.flushHeaders();
     }
   };
